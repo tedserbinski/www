@@ -24,7 +24,6 @@ into the {body} of the default.hbs template --}}
 <main id="site-main" class="site-main outer">
     <div class="inner posts">
 
-      {{#get "posts" limit="6" include="authors,tags"}}
         <div class="post-feed">
             {{#foreach posts}}
 
@@ -33,7 +32,7 @@ into the {body} of the default.hbs template --}}
 
             {{/foreach}}
         </div>
-      {{/get}}
+
     </div>
 </main>
 
